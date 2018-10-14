@@ -1,5 +1,7 @@
 # ideapad-330-linux
 
+__WIP: This is not a finished walkthrough yet__
+
 Getting a fully functional Linux setup on the Lenovo IdeaPad 330 is _not_ a straightforward task. This repository serves to act a central source of all the information I trawled from the interwebz over the past couple days to save everybody else the trouble I went through.
 
 ## Quirks
