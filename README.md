@@ -22,7 +22,7 @@ Before we begin -- These are the steps _I_ followed to get my SKU working, YMMV 
 
 ## Step 1 - Getting the kernel
 
-Regardless of what distro you choose to run, try getting on the latest stable kernel to see if you actually need to build your own custom kernel. As of writing it is [4.18.14](https://git.kernel.org/pub/scm/linux/kernel/git/linux-stable/refs/v4.18.14). If your **touchpad works**, skip to Step  2. 
+Regardless of what distro you choose to run, try getting on the latest stable kernel to see if you actually need to build your own custom kernel. As of writing it is [4.18.14](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=v4.18.14). If your **touchpad works**, skip to Step  2.
 
 So you just tried the latest stable kernel and your touchpad still doesn't work. Goddamit ELAN. Thankfully this is easy to remedy. Make sure you have enough bandwidth to clone a full kernel tree (Your WiFi is likely dead too, so grab that ethernet cable).
 
