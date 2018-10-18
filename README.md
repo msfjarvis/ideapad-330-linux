@@ -65,8 +65,26 @@ Once that's done, let's compile the actual kernel.
 cp -v /boot/config-$(uname -r) .config
 make oldconfig
 make -j8
-sudo make install
 sudo make modules_install
+sudo make install
 ```
 
 Now reboot, and you should boot right into your newly compiled kernel with a working trackpad.
+
+
+### Step 2 - Getting WiFi working
+
+WiFi is a relatively easy affair. Just grab the `rtl8821ce` driver and install the module. Or just copypasta the commands from below because isn't that what the internet is for?
+
+```shell
+git clone https://github.com/tomaspinho/rtl8821ce
+cd rtl8821ce
+sudo ./dkms-install.sh
+```
+
+And, you guessed it, reboot.
+
+
+### Step 3 - Hardware acceleration
+
+Now this is something of a fluke since I still don't know a reliable way to make this work, but for _some_ SKUs, installing the `linux-firmware` package seems to do the deed (Obviously not for yours truly). I'll update this section once I have that nailed down, but I suppose this is going to need me to install Windows and upgrade my BIOS.
