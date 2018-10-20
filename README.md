@@ -87,4 +87,6 @@ And, you guessed it, reboot.
 
 ### Step 3 - Hardware acceleration
 
-Now this is something of a fluke since I still don't know a reliable way to make this work, but for _some_ SKUs, installing the `linux-firmware` package seems to do the deed (Obviously not for yours truly). I'll update this section once I have that nailed down, but I suppose this is going to need me to install Windows and upgrade my BIOS.
+To get hardware acceleration up and running, grab the `master` branch of my [linux tree](https://github.com/MSF-Jarvis/linux). `jarvisbox_defconfig` has been minimally tuned to the IdeaPad 330 hardware, enabling the rtl8821ce driver I imported into the tree along with KVM.
+
+Before installing the kernel, grab the [linux-firmware](https://kernel.googlesource.com/pub/scm/linux/kernel/git/firmware/linux-firmware) repo from kernel.org and run `sudo make install` to install all the needed firmware for the amdgpu module.
