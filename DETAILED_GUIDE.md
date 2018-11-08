@@ -60,7 +60,7 @@ WiFi is a relatively easy affair. Just grab the `rtl8821ce` driver and install t
 ```shell
 git clone https://github.com/tomaspinho/rtl8821ce
 cd rtl8821ce
-sudo ./dkms-install.sh
+chmod +x dkms-install.sh; sudo ./dkms-install.sh
 ```
 
 And, you guessed it, reboot.
