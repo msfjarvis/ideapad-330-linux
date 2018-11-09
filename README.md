@@ -33,7 +33,8 @@ git clone git://github.com/MSF-Jarvis/linux -b linux-4.19.y
 cd linux
 make jarvisbox_defconfig
 make -j$(nproc --all)
-sudo make headers_install modules_install install
+make headers_install
+sudo make modules_install install
 reboot
 ```
 
