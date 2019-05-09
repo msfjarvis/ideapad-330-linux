@@ -29,7 +29,7 @@ After installing your distro and updating all packages, install the `linux-firmw
 Now to install the kernel and get everything functional, run the following commands. Ensure that your system is setup to compile the kernel before continuing.
 
 ```shell
-git clone git://github.com/MSF-Jarvis/linux -b linux-4.19.y
+git clone git://github.com/MSF-Jarvis/linux -b linux-5.0.y
 cd linux
 make jarvisbox_defconfig
 make -j$(nproc --all)

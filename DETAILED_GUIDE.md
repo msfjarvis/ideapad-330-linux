@@ -2,7 +2,7 @@
 
 ## Step 1 - Getting the kernel
 
-Regardless of what distro you choose to run, try getting on the latest stable kernel to see if you actually need to build your own custom kernel. As of writing it is [4.18.14](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=v4.18.14). If your touchpad and GPU work, you can skip to Step  2 to get WiFi going.
+Regardless of what distro you choose to run, try getting on the latest stable kernel to see if you actually need to build your own custom kernel. As of writing it is [5.0.14](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=v5.0.14). If your touchpad and GPU work, you can skip to Step  2 to get WiFi going.
 
 So you just tried the latest stable kernel and your touchpad still doesn't work. Goddamit ELAN. Thankfully this is easy to remedy. Make sure you have enough bandwidth to clone a full kernel tree (Your WiFi is dead too, so grab that ethernet cable).
 
