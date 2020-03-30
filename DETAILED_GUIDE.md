@@ -2,7 +2,7 @@
 
 ## Step 1 - Getting the kernel
 
-Regardless of what distro you choose to run, try getting on the latest stable kernel to see if you actually need to build your own custom kernel. As of writing it is [5.0.14](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=v5.0.14). If your touchpad and GPU work, you can skip to Step  2 to get WiFi going.
+Regardless of what distro you choose to run, try getting on the latest stable kernel to see if you actually need to build your own custom kernel. As of writing it is [5.0.14](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/log/?h=v5.0.14). If your touchpad and GPU work, you can skip to Step 2 to get WiFi going.
 
 So you just tried the latest stable kernel and your touchpad still doesn't work. Goddamit ELAN. Thankfully this is easy to remedy. Make sure you have enough bandwidth to clone a full kernel tree (Your WiFi is dead too, so grab that ethernet cable).
 
@@ -52,7 +52,6 @@ sudo make headers_install modules_install install
 
 Now reboot, and you should boot right into your newly compiled kernel with a working trackpad.
 
-
 ### Step 2 - Getting WiFi working
 
 WiFi is a relatively easy affair. Just grab the `rtl8821ce` driver and install the module. Or just copypasta the commands from below because isn't that what the internet is for?
@@ -65,11 +64,8 @@ chmod +x dkms-install.sh; sudo ./dkms-install.sh
 
 And, you guessed it, reboot.
 
-
 ### Step 3 - Hardware acceleration
 
 If you built a kernel from the `master` branch as per Step 1, simply go ahead and grab the [linux-firmware](https://kernel.googlesource.com/pub/scm/linux/kernel/git/firmware/linux-firmware) repo and run `sudo make install` to install all the needed firmware for the amdgpu module.
 
-
 After following all these steps, you should have an IdeaPad 330 with a working touchpad, WiFi and hardware acceleration. Enjoy!
-
